@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS selectors beginning</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1 id="title">Class selectors</h1>
-    <h2 class="red">Red</h2>
-    <h2 class="green">Green</h2>
-    <h2 class="blue">Blue</h2>
-    <hr>
+<body> 
+    <h1>Slovenian Flag</h1>
+    <p style="color: yellow;">To show the flag click the button. To hide it, click the button twice.</p>
+    <img class="coatofarms hide" src="images/CoaSlo.png" alt="A slovenian coat of arms" style="height: 100px; width: 90px;">
     
-    <img class="coatofarms hide" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Coat_of_arms_of_Slovenia.svg/800px-Coat_of_arms_of_Slovenia.svg.png" width="200" height="200" alt="A slovenian coat of arms">
-    
-    <p style="color: white;">Click to show the Slovenian flag and double click to hide it.</p>
+   
     <div class="whiteflag hide"></div>
     <div class="blueflag hide"></div>
     <div class="redflag hide"></div>
@@ -26,9 +22,6 @@
 </body>
 <script>
     console.log("JS running");
-
-    document.getElementById("title").style.color = "yellow";
-    let a = document.getElementsByClassName("hide");
     hide()
  
 function hide()
@@ -38,7 +31,6 @@ function hide()
         hidden[1].style.display = "none";
         hidden[2].style.display = "none";
         hidden[3].style.display = "none";
-        hidden[4].style.display = "none";
     }
 
   
@@ -49,7 +41,7 @@ function hide()
         hidden[1].style.display = "block";
         hidden[2].style.display = "block";
         hidden[3].style.display = "block";
-        hidden[4].style.display = "block";
+       
     }
 </script>
 </html>

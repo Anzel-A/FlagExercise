@@ -1,0 +1,54 @@
+html
+{
+    background-color: black;
+}
+
+h1
+{
+    color: white;
+}
+
+.red
+{
+    color: red;
+}
+
+.green
+{
+    color: green;
+}
+
+.blue
+{
+    color: blue;
+}
+
+.whiteflag
+{
+    width: 500px;
+    height: 100px;
+    background-color: white;
+}
+
+.blueflag
+{
+    width: 500px;
+    height: 100px;
+    background-color: blue;
+}
+
+.redflag
+{
+    width: 500px;
+    height: 100px;
+    background-color: red;
+}
+
+.coatofarms
+{
+    height: 100px;
+    width: 100px;
+    position:relative;
+    top: 200px;
+    left: 40px;
+}

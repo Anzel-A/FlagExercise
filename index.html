@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors beginning</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h1 id="title">Class selectors</h1>
+    <h2 class="red">Red</h2>
+    <h2 class="green">Green</h2>
+    <h2 class="blue">Blue</h2>
+    <hr>
+    
+    <img class="coatofarms hide" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Coat_of_arms_of_Slovenia.svg/800px-Coat_of_arms_of_Slovenia.svg.png" width="200" height="200" alt="A slovenian coat of arms">
+    
+    <p style="color: white;">Click to show the Slovenian flag and double click to hide it.</p>
+    <div class="whiteflag hide"></div>
+    <div class="blueflag hide"></div>
+    <div class="redflag hide"></div>
+
+    <hr />
+
+    <button style="height: 50px; width: 120px; border-radius: 30px; color: black; background-color: gray; font-weight: bold ;" onclick="show()" ondblclick="hide()">Hide/show flag</button>
+</body>
+<script>
+    console.log("JS running");
+
+    document.getElementById("title").style.color = "yellow";
+    let a = document.getElementsByClassName("hide");
+    hide()
+ 
+function hide()
+    {
+        let hidden = document.getElementsByClassName("hide");
+        hidden[0].style.display = "none";
+        hidden[1].style.display = "none";
+        hidden[2].style.display = "none";
+        hidden[3].style.display = "none";
+        hidden[4].style.display = "none";
+    }
+
+  
+    function show()
+    {
+        let hidden = document.getElementsByClassName("hide");
+        hidden[0].style.display = "block";
+        hidden[1].style.display = "block";
+        hidden[2].style.display = "block";
+        hidden[3].style.display = "block";
+        hidden[4].style.display = "block";
+    }
+</script>
+</html>

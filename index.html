@@ -8,40 +8,54 @@
 </head>
 <body> 
     <h1>Slovenian Flag</h1>
-    <p style="color: yellow;">To show the flag click the button. To hide it, click the button twice.</p>
-    <img class="coatofarms hide" src="images/CoaSlo.png" alt="A slovenian coat of arms" style="height: 100px; width: 90px;">
+    <p style="color: yellow;">Click on the button to show or hide the Slovenian flag</p>
     
-   
-    <div class="whiteflag hide"></div>
-    <div class="blueflag hide"></div>
-    <div class="redflag hide"></div>
+    <div id="flag">
+        <img class="coatofarms flagpart" src="images/CoaSlo.png" alt="A slovenian coat of arms" style="height: 100px; width: 90px;"> 
+        <div class="whiteflag flagpart"></div>
+        <div class="blueflag flagpart"></div>
+        <div class="redflag flagpart"></div>
+    </div>
 
     <hr />
 
-    <button style="height: 50px; width: 120px; border-radius: 30px; color: black; background-color: gray; font-weight: bold ;" onclick="show()" ondblclick="hide()">Hide/show flag</button>
+    <button style="height: 50px; width: 120px; border-radius: 30px; color: black; background-color: gray; font-weight: bold ;" onclick="hideshow();">Hide/show flag</button>
 </body>
 <script>
     console.log("JS running");
-    hide()
- 
-function hide()
-    {
-        let hidden = document.getElementsByClassName("hide");
-        hidden[0].style.display = "none";
-        hidden[1].style.display = "none";
-        hidden[2].style.display = "none";
-        hidden[3].style.display = "none";
-    }
+// function hideshow()
+//     {
+//         let flagpart = document.getElementsByClassName("hideshow");
+//         if (flagpart.style.display === "none")
+//         {
+//             flagpart[0].style.display = "block";
+//             flagpart[1].style.display = "block";
+//             flagpart[2].style.display = "block";
+//             flagpart[3].style.display = "block";
 
-  
-    function show()
+//         }
+//         else
+//         {
+//             flagpart[0].style.display ="none;"
+//             flagpart[1].style.display ="none;"
+//             flagpart[2].style.display ="none;"
+//             flagpart[3].style.display ="none;"
+//         }    
+//     }
+
+    let flag = document.getElementById("flag");
+    flag.style.display = "none"
+    function hideshow() 
     {
-        let hidden = document.getElementsByClassName("hide");
-        hidden[0].style.display = "block";
-        hidden[1].style.display = "block";
-        hidden[2].style.display = "block";
-        hidden[3].style.display = "block";
-       
+        if (flag.style.display == "block") 
+        {
+            flag.style.display = "none";
+        } 
+        
+        else 
+        {
+            flag.style.display = "block";
+        }
     }
 </script>
 </html>
